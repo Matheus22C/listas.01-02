@@ -40,14 +40,14 @@ WHERE editora = 'Penguin Books';
 SELECT * FROM livros
 WHERE num_paginas > 500;
 
-SELECT categoria, COUNT(*)
+SELECT categoria, COUNT *
 FROM livros
 GROUP BY categoria;
 
 SELECT * FROM livros
 LIMIT 5;
 
-SELECT COUNT(*), AVG(num_paginas)
+SELECT COUNT *, AVG(num_paginas)
 FROM livros
 WHERE categoria = 'Drama';
 
